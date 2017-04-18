@@ -23,9 +23,14 @@ dylanApp.directive('imageonload', function() {
     })
 
 dylanApp.controller('mainController', function($scope, $sce) {
+    // $scope.gallery = {
+    //     1: {
+    //         file: 'one.jpg',
+    //         film_type: ""
+    //     }
+    // }
     $scope.gallery = []
     $scope.index = 0
-    // $scope.colorPallete  = ['rgb(219, 219, 209)', 'rgb(28, 33, 40)', 'rgb(154, 166, 191)', 'rgb(134, 117, 114)', 'rgb(136, 141, 166)', 'rgb(77, 75, 78)', 'rgb(95, 105, 115)', 'rgb(81, 88, 103)', 'rgb(172, 132, 118)']
     $scope.colorThief = new ColorThief
     $scope.colors = []
     // $scope.imageUrl = '../imgs/' + $scope.gallery[$scope.index]
@@ -57,13 +62,13 @@ dylanApp.controller('mainController', function($scope, $sce) {
     }
 
     $scope.colorBar = function () {
-        console.log('-webkit-linear-gradient(left, ' + $scope.colors[0] + ' 0%, ' + $scope.colors[1] + ' 25%, ' + $scope.colors[2] + ' 50%, ' + $scope.colors[3] + ' 75%, ' + $scope.colors[4] + ' 100%)')
-        $($('.color-bar')[i]).css({background: '-webkit-linear-gradient(left, ' + $scope.colors[0] + ' 0%, ' + $scope.colors[1] + ' 25%, ' + $scope.colors[2] + ' 50%, ' + $scope.colors[3] + ' 75%, ' + $scope.colors[4] + ' 100%)'})
+        // console.log('-webkit-linear-gradient(left, ' + $scope.colors[0] + ' 0%, ' + $scope.colors[1] + ' 25%, ' + $scope.colors[2] + ' 50%, ' + $scope.colors[3] + ' 75%, ' + 'rgb(0,0,0)' + ' 100%)')
+        // $($('.color-bar')[0]).css({background: '-webkit-linear-gradient(top, ' + $scope.colors[0] + ' 0%, ' + $scope.colors[1] + ' 25%, ' + $scope.colors[2] + ' 50%, ' + $scope.colors[3] + ' 75%, ' + $scope.colors[4] + ' 100%)'})
         for (var i = 0; i < $('.color-bar').length; i++) {
             console.log($scope.colors[0])
-            $($('.color-bar')[i]).css({background: '-moz-linear-gradient(left, ' + $scope.colors[0] + ' 0%, ' + $scope.colors[1] + ' 25%, ' + $scope.colors[2] + ' 50%, ' + $scope.colors[3] + ' 75%, ' + $scope.colors[4] + ' 100%)'})
-            $($('.color-bar')[i]).css({background: '-webkit-linear-gradient(left, ' + $scope.colors[0] + ' 0%, ' + $scope.colors[1] + ' 25%, ' + $scope.colors[2] + ' 50%, ' + $scope.colors[3] + ' 75%, ' + $scope.colors[4] + ' 100%)'})
-            $($('.color-bar')[i]).css({background: 'linear-gradient(to right, ' + $scope.colors[0] + ' 0%, ' + $scope.colors[1] + ' 25%, ' + $scope.colors[2] + ' 50%, ' + $scope.colors[3] + ' 75%, ' + $scope.colors[4] + ' 100%)'})
+            $($('.color-bar')[i]).css({background: '-moz-linear-gradient(top, ' + $scope.colors[0] + ' 0%, ' + $scope.colors[1] + ' 25%, ' + $scope.colors[2] + ' 50%, ' + $scope.colors[3] + ' 75%, ' + $scope.colors[4] + ' 100%)'})
+            $($('.color-bar')[i]).css({background: '-webkit-linear-gradient(top, ' + $scope.colors[0] + ' 0%, ' + $scope.colors[1] + ' 25%, ' + $scope.colors[2] + ' 50%, ' + $scope.colors[3] + ' 75%, ' + $scope.colors[4] + ' 100%)'})
+            $($('.color-bar')[i]).css({background: 'linear-gradient(to bottom, ' + $scope.colors[0] + ' 0%, ' + $scope.colors[1] + ' 25%, ' + $scope.colors[2] + ' 50%, ' + $scope.colors[3] + ' 75%, ' + $scope.colors[4] + ' 100%)'})
         }
     }
 
