@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="dylanApp">
+<head>
+	<title>2</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+	<script src="colorthief.js"></script>
+	<script src="angular.js"></script>
+</head>
+<body ng-controller="mainController">
+	<div class="container">
+		<div class="color-bar color-bar--top">
+			<div ng-repeat="(i, colors) in colorPallete" class="color-bar__color"></div>
+		</div>
+		<div class="color-bar color-bar--bottom">
+			<div ng-repeat="(i, colors) in colorPallete" class="color-bar__color"></div>
+		</div>
+		<!-- <div class="photo" style="background-image: url('imgs/{{gallery[index]}}');"></div> -->
+		<img imageonload="setColorPalette(); colorBar()" class="photo" ng-src="/imgs/{{gallery[index]}}">
+		<div class="navigation-arrows">
+			<div ng-click="decrementIndex(gallery);" class="navigation-arrows__arrow">Back</div>
+			<div ng-click="incrementIndex(gallery);" class="navigation-arrows__arrow">Forward</div>
+		</div>
+	</div>
+</body>
+</html>
