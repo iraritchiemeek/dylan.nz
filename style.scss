@@ -42,14 +42,16 @@ html, body {
 }
 
 .photo {
-	@include center-vertical;
+	// @include center-vertical;
 	box-shadow: 0 1px 3px rgba(0,0,0,.6);
 	z-index: 2;
 	position: absolute;
 	float: right;
 	right: 0;
-	max-height: 100%;
+	max-height: calc(100% - 20px);
 	max-width: 75%;
+	margin: 0px 10px 10px 10px;
+	top: 10px;
 }
 
 .title {
