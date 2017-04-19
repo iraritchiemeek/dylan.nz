@@ -77,8 +77,6 @@ dylanApp.controller('mainController', function($scope, $sce) {
             film_type: "Superia 800"
         }      
     }
-    console.log('test')
-    console.log($scope.gallery[1])
 
     $scope.index = 0
     $scope.colorThief = new ColorThief
@@ -104,16 +102,16 @@ dylanApp.controller('mainController', function($scope, $sce) {
         }
     }
 
-    $scope.decrementIndex = function(array) {
+    $scope.decrementIndex = function(n) {
         if ($scope.index <= 0) {
-            $scope.index = array.length -1
+            $scope.index = n -1
         } else {
             $scope.index -= 1
         }
     }
 
-    $scope.incrementIndex = function(array) {
-        if ($scope.index >= array.length -1) {
+    $scope.incrementIndex = function(n) {
+        if ($scope.index >= n -1) {
             $scope.index = 0
         } else {
             $scope.index += 1

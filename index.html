@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="dylanApp">
 <head>
-	<title>2</title>
+	<title>Dylan Lee</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
@@ -12,13 +12,13 @@
 </head>
 <body ng-controller="mainController">
 	<div class="container">
-		<div class="title"><h1>Dylan Lee</h1></div>
-		<div class="film"><span>{{gallery[index+1].film_type}}</span></div>
+		<div class="text title"><h1>Dylan Lee</h1></div>
+		<div class="text film"><span>{{gallery[index+1].film_type}}</span></div>
 		<div class="color-bar"></div>
 		<img imageonload="setColorPalette(); colorBar()" class="photo" ng-src="/imgs/{{gallery[index+1].file}}">
 		<div class="navigation-arrows">
-			<div ng-click="decrementIndex(gallery);" class="navigation-arrows__arrow">Previous</div>
-			<div ng-click="incrementIndex(gallery);" class="navigation-arrows__arrow">Next</div>
+			<div ng-click="decrementIndex(13);" class="text navigation-arrows__arrow">Previous</div>
+			<div ng-click="incrementIndex(13);" class="text navigation-arrows__arrow">Next</div>
 		</div>
 	</div>
 </body>
