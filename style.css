@@ -17,16 +17,22 @@ html, body {
 .text {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
 
+.photo-container {
+  height: calc(100% - 20px);
+  width: 75%;
+  margin: 0px 10px 10px 10px;
+  top: 10px;
+  right: 0;
+  position: absolute; }
+
 .photo {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
   z-index: 2;
   position: absolute;
-  float: right;
-  right: 0;
-  max-height: calc(100% - 20px);
-  max-width: 75%;
-  margin: 0px 10px 10px 10px;
-  top: 10px; }
+  float: left;
+  max-height: 100%;
+  max-width: 100%;
+  float: left; }
 
 .title {
   position: relative; }
