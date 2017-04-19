@@ -96,9 +96,9 @@ dylanApp.controller('mainController', function($scope, $sce) {
 
     $scope.colorBar = function () {
         for (var i = 0; i < $('.color-bar').length; i++) {
-            $($('.color-bar')[i]).css({background: '-moz-linear-gradient(top, ' + $scope.colors[0] + ' 0%, ' + $scope.colors[1] + ' 25%, ' + $scope.colors[2] + ' 50%, ' + $scope.colors[3] + ' 75%, ' + $scope.colors[4] + ' 100%)'})
-            $($('.color-bar')[i]).css({background: '-webkit-linear-gradient(top, ' + $scope.colors[0] + ' 0%, ' + $scope.colors[1] + ' 25%, ' + $scope.colors[2] + ' 50%, ' + $scope.colors[3] + ' 75%, ' + $scope.colors[4] + ' 100%)'})
-            $($('.color-bar')[i]).css({background: 'linear-gradient(to bottom, ' + $scope.colors[0] + ' 0%, ' + $scope.colors[1] + ' 25%, ' + $scope.colors[2] + ' 50%, ' + $scope.colors[3] + ' 75%, ' + $scope.colors[4] + ' 100%)'})
+            $($('.color-bar')[i]).css({background: '-moz-linear-gradient(left, ' + $scope.colors[0] + ' 0%, ' + $scope.colors[1] + ' 25%, ' + $scope.colors[2] + ' 50%, ' + $scope.colors[3] + ' 75%, ' + $scope.colors[4] + ' 100%)'})
+            $($('.color-bar')[i]).css({background: '-webkit-linear-gradient(left, ' + $scope.colors[0] + ' 0%, ' + $scope.colors[1] + ' 25%, ' + $scope.colors[2] + ' 50%, ' + $scope.colors[3] + ' 75%, ' + $scope.colors[4] + ' 100%)'})
+            $($('.color-bar')[i]).css({background: 'linear-gradient(to right, ' + $scope.colors[0] + ' 0%, ' + $scope.colors[1] + ' 25%, ' + $scope.colors[2] + ' 50%, ' + $scope.colors[3] + ' 75%, ' + $scope.colors[4] + ' 100%)'})
         }
     }
 

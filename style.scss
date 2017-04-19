@@ -116,11 +116,18 @@ html, body {
 
 .color-bar {
 	box-shadow: inset 0 1px 3px rgba(0,0,0,.6);
-	width: 25px;
-	height: 100%;
+	// width: 25px;
+	// height: 100%;
+	width: 100%;
+	height: 10px;
 	position: absolute;
 	left: 0;
-	top: 0;
+	&--top {
+		top:0
+	}
+	&--bottom {
+		bottom: 0;
+	}
 }
 
 
