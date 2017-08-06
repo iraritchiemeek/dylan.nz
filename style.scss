@@ -33,14 +33,6 @@ html, body {
 	padding: 0 0 0 35px;
 }
 
-// .photo-container {
-
-// }
-
-.text {
-	text-shadow: 0 1px 3px rgba(0,0,0,.3);
-}
-
 .photo-container {
 	height: calc(100% - 90px);
 	width: 75%;
@@ -52,7 +44,6 @@ html, body {
 
 .photo {
 	@include center;
-	box-shadow: 0 1px 3px rgba(0,0,0,.6);
 	z-index: 2;
 	position: absolute;
 	float: left;
@@ -115,18 +106,12 @@ html, body {
 }
 
 .color-bar {
-	box-shadow: inset 0 1px 3px rgba(0,0,0,.6);
-	// width: 25px;
-	// height: 100%;
 	width: 100%;
-	height: 10px;
+	height: 20px;
 	position: absolute;
 	left: 0;
 	&--top {
 		top:0
-	}
-	&--bottom {
-		bottom: 0;
 	}
 }
 

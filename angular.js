@@ -25,55 +25,55 @@ dylanApp.directive('imageonload', function() {
 dylanApp.controller('mainController', function($scope, $sce) {
     $scope.gallery = {
         1: {
-            file: 'one.jpg',
+            file: '10 Portra 160.JPG',
             film_type: "Portra 160"
         },
         2: {
-            file: 'two.jpg',
+            file: '11 Portra 160.JPG',
             film_type: "Portra 160"
         },
         3: {
-            file: 'three.jpg',
+            file: '12 Portra 160.JPG',
             film_type: "Portra 160"
         },
         4: {
-            file: 'four.jpg',
+            file: '13 Superia 800.JPG',
             film_type: "Superia 800"
         },
         5: {
-            file: 'five.jpg',
+            file: '14 Superia 800.JPG',
             film_type: "Superia 800"
         },
         6: {
-            file: 'six.jpg',
+            file: '15 Superia 800.JPG',
             film_type: "Superia 800"
         },
         7: {
-            file: 'seven.jpg',
+            file: '16 Superia 800.JPG',
             film_type: "Superia 800"
         },
         8: {
-            file: 'eight.jpg',
+            file: '17 Superia 800.JPG',
             film_type: "Superia 800"
         },
         9: {
-            file: 'nine.jpg',
+            file: '18 Superia 800.JPG',
             film_type: "Superia 800"
         },
         10: {
-            file: 'ten.jpg',
+            file: '19 Superia 400.JPG',
             film_type: "Superia 400"
         },
         11: {
-            file: 'eleven.jpg',
+            file: '20 Superia 400.JPG',
             film_type: "Superia 400"
         },
         12: {
-            file: 'twelve.jpg',
+            file: '21 Portra 400.jpg',
             film_type: "Portra 400"
         },
         13: {
-            file: 'thirteen.jpg',
+            file: '22 Superia 800.JPG',
             film_type: "Superia 800"
         }      
     }

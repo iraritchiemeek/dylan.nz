@@ -14,9 +14,6 @@ html, body {
   overflow: hidden;
   padding: 0 0 0 35px; }
 
-.text {
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
-
 .photo-container {
   height: calc(100% - 90px);
   width: 75%;
@@ -31,7 +28,6 @@ html, body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
   z-index: 2;
   position: absolute;
   float: left;
@@ -80,14 +76,11 @@ html, body {
     right: 0; }
 
 .color-bar {
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.6);
   width: 100%;
-  height: 10px;
+  height: 20px;
   position: absolute;
   left: 0; }
   .color-bar--top {
     top: 0; }
-  .color-bar--bottom {
-    bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */
